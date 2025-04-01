@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Hanuman", serif;
+}
+
+header{
+    background-color: #f23645;
+    height: 90px;
+    padding-top: 15px;
+    
+}
+ul {
+ width : 80%;
+ margin: auto;
+ list-style: none;
+ display: flex;
+
+}
+
+ul li{
+    margin-left: 50px;
+    flex-shrink: 0;
+}
+ul>li>a{
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 30px;
+    color: white;
+}
+
+ul>li:hover a{
+    background-color: #d90c16;
+}
+
+ul>li:focus a{
+    background-color: #d90c16;
+}

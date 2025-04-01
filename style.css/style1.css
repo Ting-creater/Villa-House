@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanuman", serif;
+
+}
+body{
+    display: grid;
+}
+
+.contentform{
+    width: 70%;
+    height: 90vh;
+    margin :auto;
+    background-color: rgb(64, 100, 122);
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+header{
+    margin-top: 30px;
+    height: 100px;
+    background-color: rgb(103, 110, 119);
+
+}
+header>h1{
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+
+main{
+    height: 60%;
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.boxLeft{
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+    padding-top: 3%;
+    background-color:#A9BFA8;
+    display: flex;
+    justify-content: center;
+    place-content: space-evenly;
+    flex-direction: column;
+}
+.boxLeft>button:nth-child(1){background-color:cadetblue;}
+.boxLeft>button:nth-child(2){background-color:#D9EAFD}
+.boxLeft>button:nth-child(3){background-color:#A4B465}
+
+.boxLeft>button:nth-child(1) {
+    width: 90%;
+    height: 50px;
+}
+.boxLeft>button:nth-child(2) {
+    width: 90%;
+    height: 50px;
+}
+
+.boxLeft>button:nth-child(3) {
+    width: 90%;
+    height: 50px;
+}
+
+.boxCenter {
+    width: 5px;
+    height: 80%;
+    margin-top: 3%;
+    background-color: pink;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; /* Centers content inside */
+   
+    
+}
+
+
+.Or{
+    outline: auto;
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+    left: -25px;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    background-color: purple;
+   
+}
+
+
+.boxCenter .align{
+    width: 10px;
+    height: 100%;
+
+}
+.boxRight{
+    width: 60%;
+    background-color: #81BFDA;
+    /* position: relative; */
+    display: flex; /* Make it a flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column;
+    border: none;
+    gap:20px;
+    
+}
+
+
+.boxRight input{
+    width: 70%;
+    height: 12.5%;
+    font-size: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.boxRight .submit{
+    width: 70%;
+    height: 12.5%;
+    padding-top: 5px;
+    font-size: 100%;
+    background-color: #aeb9fa;
+}
+
+footer{
+    padding: 30px;
+    height:15%;
+    background-color: bisque;
+    align-items: center;
+    display: flex;
+   justify-content: space-around;
+   
+}

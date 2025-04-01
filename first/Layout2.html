@@ -1,0 +1,51 @@
+<!-- doc -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Hanuman", serif;
+        }
+        .mainBox{
+            width: 60%;
+            padding: 10px;
+            height: 80vh;
+            background-color: cornflowerblue;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .box{
+            background-color: deeppink;
+            color: white;
+            padding : 20px;
+
+        }
+        .box:nth-child(4){
+            grid-column: 1/span 2;
+            /* grid-row: 2; */
+            background-color: blue;
+        }
+        .box:nth-child(6){
+            grid-row: 3;
+            grid-column: 1/span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainBox">
+        <box class="Box">Box1</box>
+        <box class="Box">Box2</box>
+        <box class="Box">Box3</box>
+        <box class="Box">Box4</box>
+        <box class="Box">Box5</box>
+        <box class="Box">Box6</box>
+    </div>
+</body>
+</html>

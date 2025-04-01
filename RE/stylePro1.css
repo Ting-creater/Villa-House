@@ -1,0 +1,1003 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanuman", serif;
+
+}
+:root{
+    --MainColor:rgb(233, 177, 73);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(166, 185, 202);
+    z-index: 999;
+    top:0;
+    position: sticky;
+    display: flex;
+}
+.logo{
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+
+menu{
+    width: 80%;
+    height: 90px;
+    margin: auto;
+    display: flex; 
+    justify-content: space-between;
+    margin-right: 10%;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+    opacity: 1;
+}
+
+ul li{
+    margin: 15px; 
+    
+}
+
+ul li a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover{
+    color: var(--MainColor);
+}
+
+ul li a:focus{
+    color: var(--MainColor);
+}
+
+ul li:nth-child(5) a{
+    padding: 10px; 
+    background-color: rgb(144, 46, 46);
+    color: white;
+    border-radius: 50px;
+    position: relative;
+}
+ul li:nth-child(5)>a>i{
+   color: aliceblue;
+   padding: 10px;
+   background-color: var(--MainColor);
+   border-radius: 50px;
+   left: 0;
+   bottom: 3px;
+   top: 3px;
+   position: absolute;
+   
+}
+.fa-bars {
+    margin-top: 20px;
+    font-size: 25px;
+    padding-right: 10px; 
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;   
+    cursor: pointer;
+    z-index: 999;
+
+}
+ #bar{
+   display: none;
+}
+
+
+
+
+aside {
+    display: grid;
+    height: 100vh;
+    position: relative;
+    background-image: url(/images/_copy1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section .content{
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+    /* background-color: pink; */
+}
+
+section>.content>h2{
+    font-size: 3rem;
+    color: white;
+}
+
+section>.content>button{
+    padding: 10px;
+    font-size: 18px;
+}
+
+ 
+.slidebar>.btn{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    bottom: 70%;
+    margin-top: 20%;
+    /* background-color: black; */
+    top: 20px;  
+    /* margin-top: 50%; */
+    
+}
+
+.slidebar>.btn>a>button {
+    font-size: 2.5rem;
+    color: white;
+    background-color: grey ;
+    width: 60px;
+    height: 60px;
+    border: none; 
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+.slidebar{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    place-content: center;
+    /* opacity: 0;  */
+    transition: all 0.5s ease-in-out;
+    /* background-color: blue; */
+    
+}
+
+#slide1{
+    background-image: url(/images/_copy1.png);
+    background-size: cover;
+}
+#slide2{
+    background-image: url(/images/image_copy.png);
+    background-size: cover;
+}
+#slide3{
+    background-image: url(/images/image_copy_2.png);
+    background-size: cover;
+}
+
+:target{
+    opacity: 1;
+    z-index:1;
+}
+
+
+.Best_Appartment{
+    width: 80%;
+    height: 90vh;
+    /* background-color: rgb(113, 117, 198); */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+ 
+   
+}
+
+.Best_Appartment .content_Appartment_edge{
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(14, 33, 80); */
+    padding: 20px;
+    position: relative;
+
+}
+
+.content_Appartment_edge img{
+    width: 100%;
+    height: 100%;
+}
+
+.featured-icon{
+    position: absolute;
+}
+
+.Best_Appartment .content_Appartment_center{
+    width: 40%;
+    height: 100%;
+    /* background-color: rgb(8, 88, 91); */
+    padding: 20px;
+}
+
+.Best_Appartment .content_Appartment_center .text{
+    font-size: 40px;
+    margin-top: 6.5%;
+    /* padding-left: 10px; */
+    padding:  5px;
+}
+
+.group-text{
+    padding: 5px;
+    margin-top: 50px;
+    
+}
+.group-text>label{
+    /* background-color: gainsboro; */
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+    border: none;
+    cursor:pointer;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+    background-color: #fafafa;
+}
+
+
+
+.content-txt{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: grey
+}
+
+.group-text input[type="checkbox"]{
+    display: none;
+}
+
+
+.group-text .group-check-box{
+    width: 100%;
+    background-color: #fafafa;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    
+}
+
+.group-text input[id="BestToggler"]:checked ~ .content-txt{
+    max-height: 100px;
+}
+
+.group-text input[id="DolorToggler"]:checked ~ .content-txt{
+    max-height: 100px;
+}
+
+.group-text input[id="alsmesitToggler"]:checked ~ .content-txt{
+    max-height: 100px;
+}
+
+.featured-icon {
+    display :grid;
+    place-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #f35525;
+    border-radius: 50%;
+    bottom : -10px;
+    left: -30px;
+}
+
+.featured-icon img{
+    width: 60px;
+    height: 60px;
+}
+
+.Best_Appartment .content_Appartment_edge1 {
+    width: 25%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 2%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+   
+}
+
+.Best_Appartment .content_Appartment_edge1>.gp_img{
+    margin-top: 10%;
+    gap:10px;
+    /* background-color: pink; */
+    display: flex;
+    padding-left: 30px;
+       
+}
+
+img{
+    width: 25%;
+    height: 15%;
+}
+
+pre>strong{
+    margin-top: 10px;
+    padding-left: 35%;
+    display: flex;
+}
+
+.Backgorund_blur{
+   width: 80%;
+   height: 70vh;
+   /* background-color: pink;  */
+   background-image: url(/images/video-bg.jpg);
+   margin-top: 10%;
+   margin-left: 10%;
+}
+
+.text_on_blur{
+   justify-items: center;
+   align-items: center;
+   padding-top: 5%;
+
+}
+
+.Backgorund_blur .text_on_blur .Vdo_On_image{
+    width: 78%;
+    height: 50vh;
+    background-image: url(/images/img_vdo.png);
+    margin-top: 5%;
+    align-content: center; 
+    z-index: 999;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+    
+}
+
+
+ .Backgorund_blur .text_on_blur .Vdo_On_image>a{
+   display: flex;
+    /* align-items: center; */
+    background-color: white;
+    width: 8%;
+    height: 21%;
+    border-radius: 50%;
+    text-decoration: none;
+    outline: 30px solid  rgba(255, 87, 34, 0.6);
+    margin-top: 5%;
+    
+    
+} 
+a .fa-play{
+    color: #f35525;
+    padding-left : 36%;
+    margin-top: 23%;
+    font-size: 280%;
+    cursor: pointer;
+}
+
+
+.Container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px; /* This ensures 10px space between each box */
+    padding-left: 15%;
+    /* background-color: aquamarine; */
+    margin-top: 10%;
+    width: 50%;
+    position: relative;
+      
+}
+
+.Container .box {
+    background-color: #ffeee9;
+    border-radius: 10px;
+    width: 20vw;
+    height: 10vh;
+    position: relative;
+
+}
+
+.Container .box .holder{
+    width: 15vw;
+    height: 10vh;
+    display: flex;
+    position: relative;
+    
+}
+
+.Container .box .holder .sub_holder1{
+    width: 6vw;
+    height: 10vh;
+    font-size: 35px;
+    color: #f35525;
+    font-weight: bold;
+    margin-top:-9px;
+    padding: 15px;
+    
+      
+}
+
+.Container .box .holder .sub_holder2{
+    width: 10vw;
+    height: 10vh;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:-7px;
+    padding: 10px;
+    position: relative;
+
+}
+
+
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f35525;
+    margin-left: 20px; 
+    position: absolute;  
+    top: -20px;
+    right: -10px;
+}
+
+
+.Best_Deal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(248, 247, 247);
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.text_left{
+    
+    height: 30vh;
+    padding: 8%;
+    padding-left: 35%;
+    /* background-color: rgb(190, 115, 172); */
+}
+
+.container .btn_right {
+    height: 30vh;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 30px
+}
+
+.container .btn {
+    width: 15%;
+    height: 20%;
+    font-size: 15px;
+    border-radius: 10px;
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+    border: none;
+    color: azure;
+    background-color: black;
+
+}
+
+.container .btn:hover{
+      background-color: #f35525;
+      transition: all 0.2s;
+
+}
+
+.Container_Bottom{
+    /* background-color: rgb(143, 104, 179); */
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.Container_Bottom .First_Column{
+    /* background-color: pink; */
+    padding-left: 15%;
+   
+}
+
+.Container_Bottom .First_Column .text{
+    width: 80%;
+    height: 70vh;
+    padding: 10%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    
+
+}
+
+
+
+.Container_Bottom .Second_Column{
+    /* background-color: rgb(133, 17, 37); */
+    background-image: url(/images/VillaHouse.png);
+    width: 100%;
+    height: 68%;
+    margin-top: 100px;
+}
+.Container_Bottom .Third_Column{
+    /* background-color: chocolate; */
+    padding-left: 15%;
+}
+
+.Container_Bottom .Third_Column .text{
+    /* background-color: aliceblue; */
+    /* background-color: burlywood; */
+    width: 80%;
+    height: 70vh;
+    padding: 10%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Container_Bottom .Third_Column .visit{
+    width: 95%;
+    height: 10%;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.Container_Bottom .Third_Column .visit>a{
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    /* padding-right: 100px; */
+    padding: 13px
+    
+}
+
+.Container_Bottom .Third_Column .visit>a>i{
+
+    background-color:#f35525;
+    color: white;
+    padding: 10px;
+    border-radius: 16px;
+    left: 0;
+    top: 5px;
+    position: relative;
+   
+}
+.Container_Bottom .Third_Column .visit .text .fa-cart-shopping{
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+ 
+}
+
+.Properties_Text{
+    width: 100%;
+    height: 40vh;
+    background-color: bisque;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.Properties_Text>span{
+    font-size: 20px;
+    color: #f35525;
+}
+.Properties_Text>p{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.villa{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    place-items: center;
+    
+}
+
+.sell{
+    width: 70%;
+    height: 80vh;
+    background-color: cadetblue;
+    padding: 25px;
+    border-radius: 10px;
+
+
+}
+
+.sell img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.villa .sell .text{
+    width: 100%;
+    height: 55%;
+    background-color: bisque;
+}
+
+
+ .text pre{
+    width: 30%;
+    height: 10%;
+    background-color:#8d5443 ;
+    font-size: 15px;
+    border-radius:3px;
+    padding: 4px;
+    position: relative;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: bold;
+    color:#f35525;
+    position: absolute;
+    left: 20%;
+    transform: translateY(-22px);
+    
+}
+
+.text  .detail{
+    width: 100%;
+    height: 87%;
+    background-color: cornflowerblue;
+}
+
+.detail ul{
+   /* background-color: red ;  
+   height: 100%;  */
+   font-size: 15px; 
+    
+}
+
+.detail ul>li{
+    flex-direction: row;
+    display: flex;
+}
+
+
+.detail>ul>li:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.detail>ul>li:nth-child(2){
+    padding-bottom: 10%;
+}
+
+.detail>ul>li:nth-child(3){
+    left: 10%;
+}
+
+
+@media(max-width: 1024px){
+    header{
+        position: relative;
+    }
+    menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+    }
+    ul{
+        opacity: 1;
+        display: none;
+        transition: all 1s ease-in-out;
+        flex-direction: column;
+        position: absolute;
+         background-color: aliceblue; 
+        width: 100%;
+        right: -100%;
+        top: 0;  
+        padding: 5px;
+        left: 0; 
+        /* right: 30px; */
+         margin-top: 22%; 
+       
+        
+        
+    } 
+    .fa-bars{
+        opacity: 1;
+        visibility: visible;
+        margin-left: 70%;
+        /* display: flex; */
+           
+    }
+    #bar:checked ~ ul{
+        display: flex;
+        opacity: 1;      
+        top: 7px;  
+        top:36px;  
+        right: 0;
+    }
+    i{
+        opacity: 1;
+        display: flex;
+    }
+
+   .slidebar{
+      width:100%;
+      
+   }
+
+   .slidebar .btn{
+      padding-top: 25%;
+      
+      
+   }
+
+   .slidebar .content{
+      width: 100%;
+      
+   }
+    .Best_Appartment{
+        width: 100%;
+        flex-direction: column;
+        height:auto;
+    }
+
+    .Best_Appartment .content_Appartment_edge{
+        width: 100%;
+    }
+    .featured-icon{
+        width: 80px;
+        height:80px;
+        border-radius: 50%;
+        bottom:-5px;
+        left: -5px;
+    }
+
+    .featured-icon img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .Best_Appartment .content_Appartment_center{
+        width: 100%;
+        
+    }
+
+    .Best_Appartment .content_Appartment_center .group-text{
+        font-size: 1.5rem;
+    }
+
+    .Best_Appartment .content_Appartment_edge1 {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .Best_Appartment .content_Appartment_edge1  .gp_img{
+        width: 50%;
+        font-size: 2rem;
+        padding: 2%;
+    }
+   
+
+}
+
+@media(max-width: 900px){
+    ul li{
+      flex-shrink: 0;
+    }
+    .Best_Appartment .content_Appartment_edge .content_Appartment_edge1{
+        width: 100%;
+    }
+
+    .Best_Appartment .content_Appartment_center{
+        width: 100%;
+        margin-top: 50px;
+    }
+      
+  }
+  
+@media(max-width : 800px){
+
+    .Best_Appartment{
+        flex-direction: column;
+        
+    }
+
+    .Best_Appartment .content_Appartment_edge .content_Appartment_edge1{
+        width: 100%;
+    }
+
+    .Best_Appartment .content_Appartment_center{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+@media(max-width: 600px){
+      header{
+          position: relative;
+      }
+      menu{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          
+  
+      }
+      ul{
+          opacity: 1;
+          display: none;
+          transition: all 1s ease-in-out;
+          flex-direction: column;
+          position: absolute;
+           background-color: aliceblue; 
+          width: 100%;
+          right: -100%;
+          top: 0;  
+          padding: 5px;
+          left: 0; 
+          /* right: 30px; */
+           margin-top: 22%; 
+         
+          
+          
+      } 
+      .fa-bars{
+          opacity: 1;
+          visibility: visible;
+          margin-left: 70%;
+          /* display: flex; */
+             
+      }
+      #bar:checked ~ ul{
+          display: flex;
+          opacity: 1;      
+          top: 7px;  
+          top:36px;  
+          right: 0;
+      }
+      i{
+          opacity: 1;
+          display: flex;
+      }
+
+     .slidebar{
+        width:100%;
+        
+     }
+
+     .slidebar .btn{
+        padding-top: 75%;
+        
+        
+     }
+
+     .slidebar .content{
+        width: 100%;
+        
+     }
+  
+      .Best_Appartment {
+          width: 100%;
+          flex-direction: column;
+          height:auto;
+         
+      }
+ 
+  
+      .Best_Appartment .content_Appartment_edge{
+         /* background-color: #f35525; */
+         width: 100vw; 
+        
+      }
+
+      .Best_Appartment .content_Appartment_edge> img{
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+      }
+
+    .featured-icon{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        bottom: 5px;
+        left: 5px;
+        
+      }
+      .featured-icon img{
+        width: 40px;
+        height: 40px
+      }
+
+      .Best_Appartment .content_Appartment_center {
+        width: 100%;
+        height: 100%;
+        /* background-color: burlywood; */
+        font-size: 35px;
+
+      }
+     
+      .Best_Appartment .content_Appartment_center .group-text .group-check-box{
+        width: 100%;
+        border-radius: 3px;
+        font-size: 20px;
+       
+      }
+
+      .Best_Appartment .content_Appartment_edge1{
+        width: 100%;
+        height: 95%;
+        margin-top: 20px;
+        font-size:1.3rem;
+      }
+
+      .content_Appartment_edge1 .gp_img{
+        width: 80%;
+      }
+      
+        .Backgorund_blur {
+            width: 100%;
+            height: 50vh;
+            margin: 0 auto;
+            /* background-size: cover; */
+            /* background-position: center; */
+            position: relative;
+            
+        }
+    
+        .text_on_blur {
+            padding-top: 3%;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+    
+        .Backgorund_blur .text_on_blur .Vdo_On_image {
+            width: 85%;
+            height: auto;
+            aspect-ratio: 16 / 9; /* Maintain video aspect ratio */
+            margin: 5% auto 0 auto; /* Keep it inside the background */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative; /* Keep it inside the background */
+        }
+    
+        .Backgorund_blur .text_on_blur .Vdo_On_image>a {
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            width: 10%;
+            height: 20%;
+            border-radius: 50%;
+            text-decoration: none;
+            outline: 15px solid rgba(255, 87, 34, 0.6);
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 4%;
+        }
+    
+        a .fa-play {
+            color: #f35525;
+            font-size: 1.5rem;
+            
+        }
+}
+
+  
+  
+
+
+
